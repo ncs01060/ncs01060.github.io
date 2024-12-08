@@ -1,6 +1,5 @@
 # The Site Configuration
-include:
-  - _javascript
+
 # Import the theme
 theme: jekyll-theme-chirpy
 
@@ -17,10 +16,10 @@ timezone: Asia/Seoul
 
 title: 먼지의 블로그 # the main title
 
-tagline: Developer # it will display as the subtitle
+tagline: A text-focused Jekyll theme # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  먼지가 한땀한땀 경험하는 개발일지 입니다.
+  먼지의 블로그 입니다.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -35,7 +34,6 @@ social:
   name: Youngmin Lee
   email: codingmin@icloud.com # change to your email address
   links:
-    # The first element serves as the copyright owner's link
     - https://github.com/ncs01060 # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -43,7 +41,7 @@ social:
 
 # Site Verification Settings
 webmaster_verifications:
-  google: K49Aqvip51qKSu7G0qbinnmeC62ZWyi_mqyFVwfM5Ro
+  google: # fill in your Google verification code
   bing: # fill in your Bing verification code
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
@@ -95,7 +93,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/commons/profile.jpg"
+avatar: "/assets/img/profile.jpg"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
