@@ -9,20 +9,7 @@ CLI=("git" "npm")
 
 ACTIONS_WORKFLOW=pages-deploy.yml
 
-# 커밋 해시 찾기
 RELEASE_HASH=$(git log --grep="chore(release):" -1 --pretty="%H")
-
-# RELEASE_HASH가 비어있는지 확인
-if [[ -z "$RELEASE_HASH" ]]; then
-  echo "Error: No release commit found!"
-  exit 1
-fi
-
-# 이전 커밋이 존재하는지 확인
-if ! git rev-parse HEAD^1 &>/dev/null; then
-  echo "Error: No previous commit found!"
-  exit 1
-fi
 
 # temporary file suffixes that make `sed -i` compatible with BSD and Linux
 TEMP_SUFFIX="to-delete"
