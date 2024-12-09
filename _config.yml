@@ -165,9 +165,6 @@ collections:
   tabs:
     output: true
     sort_by: order
-  tags:
-    output: true
-    permalink: /tags/:name/
 
 defaults:
   - scope:
